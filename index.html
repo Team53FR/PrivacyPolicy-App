@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGSR Apps</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .apps-grid {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .app-banner {
+            height: 160px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .app-content {
+            padding: 25px;
+        }
+
+        .app-content h2 {
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        .app-content p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.08);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGSR Apps</h1>
+    <p>Applications mobiles et montres connectées développées par AGSR</p>
+</header>
+
+<main class="apps-grid">
+
+    <div class="app-card">
+        <div class="app-banner">
+            ⏱️
+        </div>
+
+        <div class="app-content">
+            <h2>CountClicker</h2>
+
+            <p>
+                Compteur de tours pour montre connectée.
+                Suivez facilement vos séries, entraînements ou activités
+                grâce au comptage par clic et au chronomètre intégré.
+            </p>
+
+            <div class="buttons">
+                <a href="privacy-policy.html" class="btn btn-primary">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="btn btn-secondary">
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 AGSR Apps • Contact : agsr.contact@gmail.com
+</footer>
+
+</body>
+</html>
